@@ -563,3 +563,50 @@
     display: none;
   }
 }
+
+
+.sectors-casec {
+  padding: 60px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.heading-casec {
+  font-size: 48px;
+  font-weight: 300;
+  margin-bottom: 60px;
+}
+
+.grid-casec {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-rows: min-content;
+  gap: 40px;
+  justify-items: center;
+}
+
+.card-casec {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.3s ease;
+}
+
+.icon-casec {
+  font-size: 48px;
+  margin-bottom: 16px;
+}
+
+.text-casec {
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin: 0;
+  color: #000;
+}
+
+.card-casec:hover {
+  transform: translateY(-5px);
+  color: #5372F0;
+}

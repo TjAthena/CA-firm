@@ -422,6 +422,25 @@
   line-height: 1.5;
 }
 
+@media (max-width: 600px) {
+  .card-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .flip-card {
+    width: 100%;
+    max-width: 330px;
+  }
+  .flip-front h3 {
+    font-size: 1.4rem;
+  }
+  .flip-back p {
+    font-size: 0.9rem;
+  }
+}
+
+
+
 /* value card Design */
 .value-card-container {
   display: flex;
@@ -459,6 +478,20 @@
   font-size: 1rem;
   color: #000;
   text-align: center;
+}
+
+@media (max-width: 600px) {
+  .value-card-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two items per row */
+    gap: 20px; /* Adjust gap as needed */
+    padding: 15px;
+  }
+  .value-card {
+    width: 200px;
+    height: 200px;
+    padding: 0 20px;
+  }
 }
 
 /** service swiper Design */
@@ -555,14 +588,45 @@
   margin-top: -35px;
 }
 /* Responsive media query code for small screens */
-@media (max-width: 768px) {
+@media (max-width: 600px) {
   .card-wrapper {
-    margin: 0 10px 25px;
+    margin: 0 15px 25px;
+    padding: 15px 5px;
   }
+
+  .card-list .card-item .card-link {
+    padding: 14px;
+    border-radius: 10px;
+    margin-right: 60px;
+  }
+
+  .card-list .card-link .badge {
+    font-size: 0.85rem;
+    padding: 6px 12px;
+    margin: 12px 0 14px;
+  }
+
+  .card-list .card-link .card-title {
+    font-size: 1.05rem;
+  }
+
+  .card-list .card-link .card-button {
+    height: 30px;
+    width: 30px;
+    margin: 20px 0 5px;
+  }
+
+  .card-wrapper .swiper-pagination-bullet {
+    height: 11px;
+    width: 11px;
+  }
+
   .card-wrapper .swiper-slide-button {
-    display: none;
+    font-size: 1rem;
+    margin-top: -25px;
   }
 }
+
 
 
 .sectors-casec {
@@ -610,3 +674,16 @@
   transform: translateY(-5px);
   color: #5372F0;
 }
+
+@media (max-width: 600px) {
+  .grid-casec {
+    grid-template-columns: repeat(2, 1fr); /* Two columns of equal width */
+    gap: 20px; /* Reduced gap for mobile spacing */
+    padding: 10px;
+  }
+  .card-casec {
+    width: 100%; /* Full width for cards */
+    max-width: 200px; /* Set a max width for cards */
+  }
+}
+
